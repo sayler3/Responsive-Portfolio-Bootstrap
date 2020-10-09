@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>Responsive Portfolio</title>
   </head>
   <body>
     <div class="container">
@@ -29,38 +30,55 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html"
-                >Portfolio</a>
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a
-                >
+              <a class="nav-link" href="index.html"
+                >About<span class="sr-only">(current)</span></a
+              >
             </li>
           </ul>
         </div>
       </nav>
     </div>
-    <br>
+    <!--End of NavBar-->
+    <br />
     <div class="container">
-        <div class="row">
+      <div id="backColor">
+        <div class="card-body p-5">
+          <div class="row">
             <div class="col-sm-12">
-                <h1>About Me</h1>
+              <h1>About Me</h1>
             </div>
-        </div>
-        <div class="row">
+          </div>
+          <div class="row">
             <div class="col-sm-4">
-                <img src="./assets/images/IMG_2004.jpg" alt="Me" class="img-thumbnail">
+              <img
+                src="./assets/images/IMG_2004.jpg"
+                alt="Me"
+                class="img-thumbnail"
+              />
             </div>
             <div class="col-sm-8">
-                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam est earum, iste eos vel illo unde dolor natus officia cum, consequuntur perferendis vitae tenetur! Doloribus laboriosam illum at obcaecati eveniet.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo debitis ea maxime sit placeat laboriosam incidunt consequuntur quisquam quis eveniet? Necessitatibus, vero doloribus eius veniam quae commodi amet quaerat nemo!
-                </P>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
+                est earum, iste eos vel illo unde dolor natus officia cum,
+                consequuntur perferendis vitae tenetur! Doloribus laboriosam
+                illum at obcaecati eveniet. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Explicabo debitis ea maxime sit
+                placeat laboriosam incidunt consequuntur quisquam quis eveniet?
+                Necessitatibus, vero doloribus eius veniam quae commodi amet
+                quaerat nemo!
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+    <!--JS Starts here-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
