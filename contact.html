@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -12,37 +13,84 @@
     <title>Responsive Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Sam Ayler</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html"
-                >Portfolio<span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">About</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Sam Ayler</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html"
+              >Portfolio<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--End of NavBar-->
+
+    <div class="container p-4" style="background-color: wheat; width: 500px">
+      <div id="backColor">
+        <h1 class="px-3">Contact</h1>
+        <form>
+          <div class="form-group col-md-6">
+            <label for="inputName">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputName"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputMessage">Message</label>
+            <textarea
+              class="form-control"
+              id="inputMessage"
+              rows="3"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+      </div>
     </div>
+
+    <!--start of footer-->
+
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50 fixed-bottom">
+      <div class="container text-center">
+        <small>Copyright &copy;</small>
+      </div>
+    </footer>
+
+    <!--JS Starts here-->
+    
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
